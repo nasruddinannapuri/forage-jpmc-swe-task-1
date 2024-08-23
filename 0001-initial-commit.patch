@@ -1,0 +1,24 @@
+From d1c45be90a2cf19ab018aec0ef810a6cec7caa1e Mon Sep 17 00:00:00 2001
+From: Nasruddin Annapuri <nasruddinannapuri@gmail.com>
+Date: Fri, 23 Aug 2024 01:36:48 +0530
+Subject: [PATCH] initial commit
+
+---
+ client3.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/client3.py b/client3.py
+index e58183f..1e501c9 100644
+--- a/client3.py
++++ b/client3.py
+@@ -58,6 +58,7 @@ if __name__ == "__main__":
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
+             prices[stock] = price
++
+             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+         print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
+-- 
+2.41.0.windows.1
+
